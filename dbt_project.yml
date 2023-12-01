@@ -1,0 +1,28 @@
+name: "toronto_crime"
+version: "1.0.0"
+config-version: 2
+
+profile: "default"
+require-dbt-version: ">=1.6.0"
+
+model-paths: ["models"]
+test-paths: ["tests"]
+seed-paths: ["data"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+vars:
+  truncate_timespan_to: "{{ current_timestamp() }}"
+  "dbt_date:time_zone": "America/Toronto"
+
+models:
+    toronto_crime:
+      staging:
+        +materialized: view
+      mart:
+        +materialized: view
