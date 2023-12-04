@@ -1,0 +1,9 @@
+[0m06:46:23.524718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7b30b1700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7afac2ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7afac2a60>]}
+
+
+============================== 06:46:23.541454 | a90947ea-e00a-4db6-9027-85982488d8c3 ==============================
+[0m06:46:23.541454 [info ] [MainThread]: Running with dbt=1.6.9
+[0m06:46:23.542336 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'log_path': '/workspaces/toronto-crime-dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m06:46:23.543014 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/vscode/.dbt')}
+[0m06:46:23.543586 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m06:46:23.547734 [info ] [MainThread]: Setting up your profile.
