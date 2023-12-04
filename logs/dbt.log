@@ -7,3 +7,117 @@
 [0m06:46:23.543014 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/vscode/.dbt')}
 [0m06:46:23.543586 [info ] [MainThread]: Creating dbt configuration folder at 
 [0m06:46:23.547734 [info ] [MainThread]: Setting up your profile.
+[0m06:52:17.537986 [error] [MainThread]: Encountered an error:
+
+[0m06:52:17.539901 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.9/site-packages/dbt/cli/requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.9/site-packages/dbt/cli/requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.9/site-packages/dbt/cli/main.py", line 484, in init
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.9/site-packages/dbt/task/init.py", line 307, in run
+    adapter = self.ask_for_adapter_choice()
+  File "/home/vscode/.local/lib/python3.9/site-packages/dbt/task/init.py", line 233, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/home/vscode/.local/lib/python3.9/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/home/vscode/.local/lib/python3.9/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m06:52:17.542456 [debug] [MainThread]: Command `dbt init` failed at 06:52:17.542225 after 354.03 seconds
+[0m06:52:17.543183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7b30b1700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7afa9a2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7afa9a3a0>]}
+[0m06:52:17.543736 [debug] [MainThread]: Flushing usage events
+[0m06:55:23.040443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3fac54b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3faa2509d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3faa250970>]}
+
+
+============================== 06:55:23.047523 | 91eeacf0-019b-4fb6-a905-2233088fcdcf ==============================
+[0m06:55:23.047523 [info ] [MainThread]: Running with dbt=1.7.3
+[0m06:55:23.048425 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/workspaces/toronto-crime-dbt/logs', 'debug': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:55:23.049228 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/vscode/.dbt')}
+[0m06:55:23.049849 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m06:55:23.053769 [info ] [MainThread]: Setting up your profile.
+[0m06:56:32.502786 [info ] [MainThread]: Profile default written to /home/vscode/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m06:56:32.504925 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 69.47187, "process_user_time": 2.590756, "process_kernel_time": 0.21142, "process_mem_max_rss": "98428", "process_in_blocks": "96", "process_out_blocks": "32"}
+[0m06:56:32.505765 [debug] [MainThread]: Command `dbt init` succeeded at 06:56:32.505563 after 69.47 seconds
+[0m06:56:32.506571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3fac54b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3fae85ea60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3faa23f4c0>]}
+[0m06:56:32.507346 [debug] [MainThread]: Flushing usage events
+[0m06:59:21.652433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f052381f6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0523ff8880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0521537550>]}
+
+
+============================== 06:59:21.659546 | 289a9e47-dc35-481f-8376-6ccf2a1bb50e ==============================
+[0m06:59:21.659546 [info ] [MainThread]: Running with dbt=1.7.3
+[0m06:59:21.660454 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/workspaces/toronto-crime-dbt/logs', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:59:21.661208 [info ] [MainThread]: dbt version: 1.7.3
+[0m06:59:21.661823 [info ] [MainThread]: python version: 3.9.17
+[0m06:59:21.662413 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m06:59:21.663076 [info ] [MainThread]: os info: Linux-6.2.0-1016-azure-x86_64-with-glibc2.31
+[0m06:59:21.767863 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m06:59:21.768685 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m06:59:21.769322 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/toronto-crime-dbt/dbt_project.yml
+[0m06:59:21.770109 [info ] [MainThread]: adapter type: postgres
+[0m06:59:21.770724 [info ] [MainThread]: adapter version: 1.7.3
+[0m06:59:21.864081 [info ] [MainThread]: Configuration:
+[0m06:59:21.864850 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m06:59:21.865496 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m06:59:21.866118 [info ] [MainThread]: Required dependencies:
+[0m06:59:21.866767 [debug] [MainThread]: Executing "git --help"
+[0m06:59:21.878252 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m06:59:21.879125 [debug] [MainThread]: STDERR: "b''"
+[0m06:59:21.879716 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m06:59:21.880441 [info ] [MainThread]: Connection:
+[0m06:59:21.881136 [info ] [MainThread]:   host: localhost
+[0m06:59:21.881771 [info ] [MainThread]:   port: 5432
+[0m06:59:21.882406 [info ] [MainThread]:   user: admin
+[0m06:59:21.883033 [info ] [MainThread]:   database: postgres
+[0m06:59:21.883662 [info ] [MainThread]:   schema: public
+[0m06:59:21.884301 [info ] [MainThread]:   connect_timeout: 10
+[0m06:59:21.884910 [info ] [MainThread]:   role: None
+[0m06:59:21.885900 [info ] [MainThread]:   search_path: None
+[0m06:59:21.886951 [info ] [MainThread]:   keepalives_idle: 0
+[0m06:59:21.887640 [info ] [MainThread]:   sslmode: None
+[0m06:59:21.888752 [info ] [MainThread]:   sslcert: None
+[0m06:59:21.889445 [info ] [MainThread]:   sslkey: None
+[0m06:59:21.890070 [info ] [MainThread]:   sslrootcert: None
+[0m06:59:21.890696 [info ] [MainThread]:   application_name: dbt
+[0m06:59:21.891468 [info ] [MainThread]:   retries: 1
+[0m06:59:21.892479 [info ] [MainThread]: Registered adapter: postgres=1.7.3
+[0m06:59:21.894239 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m06:59:21.894828 [debug] [MainThread]: Using postgres connection "debug"
+[0m06:59:21.895431 [debug] [MainThread]: On debug: select 1 as id
+[0m06:59:21.896220 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:59:21.898262 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m06:59:21.899361 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m06:59:21.899908 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m06:59:21.900508 [debug] [MainThread]: On debug: No close available on handle
+[0m06:59:21.901058 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m06:59:21.901682 [info ] [MainThread]: [31m1 check failed:[0m
+[0m06:59:21.902311 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m06:59:21.903726 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.30754644, "process_user_time": 2.876233, "process_kernel_time": 0.166853, "process_mem_max_rss": "100368", "process_out_blocks": "32", "command_success": false, "process_in_blocks": "0"}
+[0m06:59:21.904630 [debug] [MainThread]: Command `dbt debug` failed at 06:59:21.904422 after 0.31 seconds
+[0m06:59:21.905219 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m06:59:21.905817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f052381f6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0521525f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f051fcc7580>]}
+[0m06:59:21.906482 [debug] [MainThread]: Flushing usage events

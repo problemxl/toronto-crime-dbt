@@ -7,7 +7,10 @@ services:
       dockerfile: .devcontainer/Dockerfile
       args:
         # [Choice] Python version: 3, 3.8, 3.7, 3.6
-        IMAGE: python:3.11
+        VARIANT: 3.9
+        # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
+        USER_UID: 1000
+        USER_GID: 1000
 
     volumes:
       - ..:/workspace:cached
@@ -24,9 +27,9 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: LocalPasswordOnly
+      POSTGRES_USER: app_user
+      POSTGRES_DB: app
+      POSTGRES_PASSWORD: app_password
 
     # Add "forwardPorts": ["5432"] to **devcontainer.json** to forward PostgreSQL locally.
     # (Adding the "ports" property to this file will not forward from a Codespace.)
