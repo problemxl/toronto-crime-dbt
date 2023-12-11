@@ -1,0 +1,12 @@
+default:
+  outputs:
+    dev:
+      dbname: postgres
+      host: localhost
+      pass: LocalPasswordOnly
+      port: 5432
+      threads: 1
+      schema: toronto_crime
+      type: postgres
+      user: admin
+  target: dev
