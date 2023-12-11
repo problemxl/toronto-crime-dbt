@@ -26,3 +26,18 @@ models:
         +materialized: view
       mart:
         +materialized: view
+
+seeds:
+  toronto_crime:
+    +enabled: true
+    # schema: toronto_crime
+    dim_type:
+      +column_types:
+        id: int
+        type: varchar(32)
+    dim_year:
+      +column_types:
+        id: int
+        year: int
+
+        

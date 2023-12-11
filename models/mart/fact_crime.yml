@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fact_crime
+    description: Description of the fact_table
+    columns:
+      - name: area_id
+        description: Description of the area_id column
+        tests:
+          - relationships:
+              to: ref('dim_area')
+              field: id
+      - name: type_id
+        description: Description of the type_id column
+        tests:
+          - relationships:
+              to: ref('dim_types')
+              field: id
+      - name: year_id
+        description: Description of the year_id column
+        tests:
+          - relationships:
+              to: ref('dim_year')
+              field: id
+      - name: value
+        description: Description of the value column

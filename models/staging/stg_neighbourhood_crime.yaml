@@ -1,0 +1,6 @@
+models:
+  - name: stg_neighbourhood_crime
+    description: Toronto crime data by neighbourhood, provided by the Toronto Police Services, one row per neighbourhood.
+    columns:
+      - name: OBJECT_ID
+        description: A unique identifier for each neighbourhood.

@@ -1,0 +1,10 @@
+version: 1
+
+sources:
+  - name: toronto_crime
+    database: postgres
+    # schema: toronto_crime
+    description: Toronto crime data by neighbourhood, provided by the Toronto Police Services, one row per neighbourhood.
+    tables:
+      - name: raw_crime_data
+        description: Toronto crime data by neighbourhood, provided by the Toronto Police Services, one row per neighbourhood.

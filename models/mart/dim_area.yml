@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_area
+    description: Description of the dim_area table
+    columns:
+      - name: id
+        description: Description of the id column
+      - name: area_name
+        description: Description of the area_name column

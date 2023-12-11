@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "name": "Local database",
+            "driver": "PostgreSQL",
+            "server": "localhost",
+            "port": 5432,
+            "database": "postgres",
+            "username": "admin",
+            "password": "LocalPasswordOnly"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "local",
+            "database": "postgres",
+            "username": "admin",
+            "password": "LocalPasswordOnly"
+        }
+    ],
+    "python.analysis.typeCheckingMode": "basic"
+}
