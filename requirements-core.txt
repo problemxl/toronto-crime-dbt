@@ -3,3 +3,5 @@ dbt-postgres
 pre-commit~=3.0.4
 sqlfluff~=2.3.1
 sqlfluff-templater-dbt~=2.3.1
+pandas
+sqlalchemy
