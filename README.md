@@ -9,8 +9,8 @@ This project is a [DBT](https://www.getdbt.com/) project that uses the Toronto C
 
 ### Requirements
 
-- (Docker)[https://www.docker.com/]
-- (Python)[https://www.python.org/downloads/]
+- [Docker](https://www.docker.com/)
+- [Python](https://www.python.org/downloads/)
 
 This project uses Docker to run the DBT project. To install Docker, follow the instructions [here](https://docs.docker.com/get-docker/).
 
